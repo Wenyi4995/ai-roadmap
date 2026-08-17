@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data and model artifacts
+data/
+checkpoints/
+models/
+runs/
+*.pt
+*.pth
+*.ckpt
+
+# Secrets and local configuration
+.env
+*.local
