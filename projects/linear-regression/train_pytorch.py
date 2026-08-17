@@ -1,4 +1,4 @@
-"""Day 5: 使用 PyTorch 标准组件完成线性回归。"""
+"""使用 PyTorch 标准组件完成线性回归。"""
 
 import torch
 from torch import nn
