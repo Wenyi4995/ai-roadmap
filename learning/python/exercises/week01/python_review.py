@@ -4,17 +4,50 @@
 """
 
 
-def summarize_study_time(minutes: list[int]) -> dict[str, float | int]:
-    """返回总时长、平均时长和最长时长。"""
-    # TODO: 在这里实现，不调用第三方库。
-    raise NotImplementedError
+def summarize_study_time(minutes):
+    total = sum(minutes)
+    average = total / len(minutes)
+    maximum = max(minutes)
+
+    return {
+        "total": total,
+        "average": average,
+        "maximum": maximum,
+    }
+
+def summarize_study_time_manually(minutes):
+    total = 0
+    maximum = minutes[0]
+
+    for minute in minutes:
+        # TODO 1：把 minute 累加到 total
+        total += minute
+        # TODO 2：如果 minute 比 maximum 大，更新 maximum
+        if minute > maximum:
+            maximum = minute
+
+    average = total / len(minutes)
+
+    return {
+        "total": total,
+        "average": average,
+        "maximum": maximum,
+    }
 
 
 if __name__ == "__main__":
-    study_minutes = [25, 30, 40, 25]
+    study_minutes = [20, 35, 45]
     summary = summarize_study_time(study_minutes)
 
-    assert summary["total"] == 120
-    assert summary["average"] == 30
-    assert summary["maximum"] == 40
+    assert summary["total"] == 100
+    assert summary["average"] == 100 / 3
+    assert summary["maximum"] == 45
     print(summary)
+
+    manual_summary = summarize_study_time_manually(study_minutes)
+    assert manual_summary["total"] == 100
+    assert manual_summary["average"] == 100 / 3
+    assert manual_summary["maximum"] == 45
+    print(manual_summary)
+    
+

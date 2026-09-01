@@ -9,13 +9,13 @@ def main() -> None:
     bias = 1.0
 
     # TODO 1: 计算每一列的平均值。
-    column_mean = None
+    column_mean = np.mean(features,axis = 0)
 
     # TODO 2: 对每列特征进行中心化。
-    centered_features = None
+    centered_features = features-column_mean
 
     # TODO 3: 使用矩阵乘法计算 predictions = features @ weights + bias。
-    predictions = None
+    predictions = features @ weights + bias
 
     print("column_mean:", column_mean)
     print("centered_features:\n", centered_features)
