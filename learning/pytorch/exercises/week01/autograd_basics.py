@@ -14,7 +14,23 @@ def main() -> None:
     print(f"x={x.item()}, y={y.item()}, dy/dx={x.grad.item()}")
 
     # TODO: 分别验证 y=x^3 和 y=2x^2+5x 在 x=2 时的梯度。
+    x_cube = torch.tensor(2.0, requires_grad=True)
+    y_cube = x_cube**3
 
+    y_cube.backward()
+
+    expected_cube_gradient = 3 * 2.0**2
+
+    assert x_cube.grad is not None
+    assert x_cube.grad.item() == expected_cube_gradient
+
+    print(
+        f"y=x^3: x={x_cube.item()}, "
+        f"y={y_cube.item()}, "
+        f"dy/dx={x_cube.grad.item()}"
+    )
+    print(x_cube)
+    print(y_cube)
 
 if __name__ == "__main__":
     main()
