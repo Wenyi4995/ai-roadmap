@@ -33,14 +33,14 @@
 - 最容易分心的时刻：
 - 明天开始后的第一件事：打开 tensor_basics.py，开始学习 PyTorch Tensor。
 
+
 ### Day 3
 
-- 日期：
-- 完成的专注块：0/2
-- 今天完成：
-- 遇到的问题：
-- 最容易分心的时刻：
-- 明天开始后的第一件事：
+- 日期：2026-09-11
+- 完成的专注块：2/2
+- 今天完成：掌握 PyTorch Tensor、矩阵乘法、reshape 和 Autograd；理解计算图、backward、grad、梯度累加、assert 与 item。
+- 遇到的问题：区分一维向量与二维矩阵；理解多次 backward 后梯度会累加。
+- 明天开始后的第一件事：打开 train_manual.py，学习手工实现线性回归。
 
 ### Day 4
 

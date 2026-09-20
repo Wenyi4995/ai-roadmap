@@ -10,3 +10,8 @@
 - 常见错误
 - 自测问题
 - 参考资料
+
+## 当前笔记
+
+- [2026-09-19：PyTorch 标准组件版线性回归（简洁版）](notes/2026-09-19-pytorch-linear-regression.md)
+- [Week 01：Python、NumPy 与 PyTorch 基础笔记（早期详细版）](notes/week01-foundations.md)
