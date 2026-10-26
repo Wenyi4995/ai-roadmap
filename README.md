@@ -1,12 +1,17 @@
 # AI Roadmap
 
-这是一个面向 2027 年暑期实习和 2028 届秋招的长期学习仓库，目标是一线互联网公司的大模型后训练、评测与应用算法岗位。
+主工作区：`G:\CodexProjects\ai-roadmap`。后续相关训练与项目统一使用此目录；C 盘旧目录仅作迁移备份。详见[迁移说明与 Codex 切换步骤](MIGRATION.md)。
+
+这是一个长期学习仓库，当前以智驾大模型算法相关实习／校招为目标，通过视觉与多模态项目建立基础，再逐步对接驾驶场景理解、轨迹预测与评测。学习者硕士在读，预计 2028 年 6 月毕业；2027 年相关实习作为阶段目标，进度按独立能力与项目成果验收。
 
 仓库既记录学习过程，也沉淀可以复习、复现和展示的技术成果。计划和日志按时间组织，知识与项目按主题组织，避免一年后出现几十个互相割裂的周目录。
 
 ## 快速入口
 
-- [长期路线图](ROADMAP.md)
+- [当前开始：服饰图像分类项目与七次学习安排](projects/fashion-classifier/README.md)
+- [视觉与多模态完整路线（2026-10 更新）](plans/vision-multimodal-roadmap.md)
+- [新路线第一周执行计划（10-20 至 10-26）](plans/2026/week-2026-10-20-vision.md)
+- [早期大模型方向路线图](ROADMAP.md)
 - [总进度面板](PROGRESS.md)
 - [第一周计划](plans/2026/week-01.md)
 - [第一周日志](logs/2026/08/week-01.md)
@@ -61,7 +66,8 @@ career: update skills matrix
 
 ## 当前阶段
 
-- 阶段：基础补齐
-- 当前计划：[2026 年第一周](plans/2026/week-01.md)
-- 当前项目：[线性回归](projects/linear-regression/README.md)
-- 每日最低目标：完成 1 个 25 分钟专注块
+- 阶段：用视觉项目补齐基础与独立训练能力
+- 当前计划：[服饰分类项目的七次学习安排](projects/fashion-classifier/README.md)
+- 今天开始：[图像数据预览工具](projects/fashion-classifier/inspect_data.py)
+- 当前项目：[服饰图像分类](projects/fashion-classifier/README.md)
+- 每日学习预算：5—8 小时，按独立实现与项目成果验收
